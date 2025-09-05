@@ -5,13 +5,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %} Bulletin Board {% endblock title %}</title>
+    <title>
+      {% block title %}
+        Bulletin Board
+      {% endblock title %}
+    </title>
+    <link rel="stylesheet" href="{% static 'posts/styles.css' %}" />
   </head>
   <body>
     <header>
-      <h1>{% block header %} Bulletin Board {% enblock header %}</h1>
+      <h1>
+        {% block header %}
+          Bulletin Board
+        {% endblock header %}
+      </h1>
     </header>
-    <main>{% block content %} {% endblock content %}</main>
+    <main>
+      {% block content %}
+      {% endblock content %}
+    </main>
     <footer>
       <!-- Add footer content or links here -->
     </footer>
